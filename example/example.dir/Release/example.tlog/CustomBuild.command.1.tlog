@@ -1,0 +1,10 @@
+^F:\MJK\CLIBTOOL\SHAPE_BASED_MATCHING-MASTER\EXAMPLE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/mjk/clibtool/shape_based_matching-master -BF:/mjk/clibtool/shape_based_matching-master --check-stamp-file F:/mjk/clibtool/shape_based_matching-master/example/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

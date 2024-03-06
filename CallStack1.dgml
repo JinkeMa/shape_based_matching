@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(Name=&quot;std::_Construct_in_place&lt;line2Dup::ColorGradientPyramid,cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 @5 OverloadingParameters=[(Type=&quot;line2Dup::ColorGradientPyramid &amp;&quot; Name=_Obj),(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@21 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@21 Name=&lt;_Args_4&gt;)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="194.835,468.9725,148.58,25.24" CodeSchemaProperty_IsExternal="True" Label="_Construct_in_place" SourceLocation="(Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include/xutility&quot; StartLineNumber=149 StartCharacterOffset=0 EndLineNumber=149 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=line2Dup::ColorGradientPyramid::pyrDown @1 @5 @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="463.425825386047,227.710009460449,88.2333333333333,25.24" Label="pyrDown" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=399 StartCharacterOffset=0 EndLineNumber=399 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=line2Dup::ColorGradientPyramid::selectScatteredFeatures @1 Type=bool OverloadingParameters=[(Type=&quot;const std::vector&lt;line2Dup::ColorGradientPyramid::Candidate,std::allocator&lt;line2Dup::ColorGradientPyramid::Candidate&gt;&gt; &amp;&quot; Name=candidates),(Type=&quot;std::vector&lt;line2Dup::Feature,std::allocator&lt;line2Dup::Feature&gt;&gt; &amp;&quot; Name=features),(Type=&quot;unsigned __int64&quot; Name=num_features),(@16 Name=distance)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="302.186666666667,284.6375,171.876666666667,25.24" Label="selectScatteredFeatures" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=155 StartCharacterOffset=0 EndLineNumber=155 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=line2Dup::hysteresisGradient @1 @5 OverloadingParameters=[(@14 Name=magnitude),(@14 Name=quantized_angle),(@14 Name=angle),(@16 Name=threshold)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="11.1499999999999,525.9,141.95,25.24" Label="hysteresisGradient" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=213 StartCharacterOffset=0 EndLineNumber=213 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=line2Dup::orUnaligned8u @1 @5 OverloadingParameters=[(Type=&quot;const unsigned char *&quot; Name=src),(@26 Name=src_stride),(Type=&quot;unsigned char *&quot; Name=dst),(@26 Name=dst_stride),(@26 Name=width),(@26 Name=height)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="43.2724920527141,247.800217381069,121.573333333333,25.24" Label="orUnaligned8u" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=552 StartCharacterOffset=0 EndLineNumber=552 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+    <Node Id="(Name=line2Dup::rotate2d @1 @9 OverloadingParameters=[(@9 Name=inPoint),(Type=&quot;const double&quot; Name=angRad)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="737.47,284.6375,85.3099999999999,25.24" Label="rotate2d" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1309 StartCharacterOffset=0 EndLineNumber=1309 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@11" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="194.845825386047,227.710009460449,79.81,25.24" Label="process" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.h StartLineNumber=103 StartCharacterOffset=0 EndLineNumber=103 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@12" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="429.93,113.854999999999,94.3899999999999,25.24" Label="angle_test" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/orig_test/src/test.cpp StartLineNumber=321 StartCharacterOffset=0 EndLineNumber=321 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+    <Node Id="@13" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="732.809158719381,227.710009460449,100.626666666667,25.24" Label="rotatePoint" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1317 StartCharacterOffset=0 EndLineNumber=1317 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@15" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="84.6649961853027,192.560117381069,74.92,25.24" Label="spread" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=600 StartCharacterOffset=0 EndLineNumber=600 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+    <Node Id="@17" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="563.291666666667,170.7825,151.666666666667,25.24" Label="addTemplate_rotate" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1359 StartCharacterOffset=0 EndLineNumber=1359 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@18" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="194.248333333333,170.7825,71.7533333333333,25.24" Label="match" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1083 StartCharacterOffset=0 EndLineNumber=1083 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+    <Node Id="@19" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="421.28,170.7825,111.69,25.24" Label="addTemplate" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1300 StartCharacterOffset=0 EndLineNumber=1300 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@20" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="19.2400047683716,358.280417381069,163.77,25.24" Label="ColorGradientPyramid" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=389 StartCharacterOffset=0 EndLineNumber=389 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@22" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="213.501659037272,358.280417381069,111.246666666667,25.24" CodeSchemaProperty_IsExternal="True" Label="make_shared" SourceLocation="(Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include/memory&quot; StartLineNumber=2725 StartCharacterOffset=0 EndLineNumber=2725 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@23" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="204.433325703939,413.520517381069,129.383333333333,25.24" CodeSchemaProperty_IsExternal="True" Label="_Ref_count_obj2" SourceLocation="(Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include/memory&quot; StartLineNumber=2006 StartCharacterOffset=0 EndLineNumber=2006 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@24" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="188.316674296061,303.040317381069,83.6166666666667,25.24" Label="makePtr" SourceLocation="(Assembly=file:///D:/OpenCV480/lib/include/opencv2/core/cvstd_wrapper.hpp StartLineNumber=144 StartCharacterOffset=0 EndLineNumber=144 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@25" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="0,468.9725,164.25,25.24" Label="quantizedOrientations" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=320 StartCharacterOffset=0 EndLineNumber=320 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@4" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="444.893333333333,56.9274999999994,64.4633333333334,25.24" Label="main" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/orig_test/src/test.cpp StartLineNumber=511 StartCharacterOffset=0 EndLineNumber=511 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+    <Node Id="@6" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="62.8016666666667,413.520517381069,76.6466666666667,25.24" Label="update" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=395 StartCharacterOffset=0 EndLineNumber=395 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@7" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="304.655825386047,227.710009460449,128.77,25.24" Label="extractTemplate" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=499 StartCharacterOffset=0 EndLineNumber=499 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@8" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="581.659158719381,227.710009460449,121.15,25.24" Label="cropTemplates" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=148 StartCharacterOffset=0 EndLineNumber=148 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="ExternalCodeRootNode" Category="ExternalCallStackEntry" Bounds="443.125,0,68,25.24" Label="外部代码">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+  </Nodes>
+  <Links>
+    <Link Source="@11" Target="@24" Category="CallStackDirectCall" Bounds="231.451590641865,252.950009460449,2.52427680626323,41.1072288395289" />
+    <Link Source="@12" Target="@17" Category="CallStackDirectCall" Bounds="513.038024902344,139.095001220703,81.6829223632813,28.7037200927734" />
+    <Link Source="@12" Target="@18" Category="CallStackDirectCall" Bounds="274.771759033203,137.294616699219,155.408538818359,35.8178863525391">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@12" Target="@19" Category="CallStackDirectCall" Bounds="477.125,139.095001220703,0,22.6875" />
+    <Link Source="@13" Target="(Name=line2Dup::rotate2d @1 @9 OverloadingParameters=[(@9 Name=inPoint),(Type=&quot;const double&quot; Name=angRad)] @3)" Category="CallStackDirectCall" Bounds="781.262716956966,252.950009460449,1.19526784957304,22.6999484933208" />
+    <Link Source="@15" Target="(Name=line2Dup::orUnaligned8u @1 @5 OverloadingParameters=[(Type=&quot;const unsigned char *&quot; Name=src),(@26 Name=src_stride),(Type=&quot;unsigned char *&quot; Name=dst),(@26 Name=dst_stride),(@26 Name=width),(@26 Name=height)] @3)" Category="CallStackDirectCall" Bounds="110.983999233416,217.800117381069,7.01372584231314,21.4459427985443">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@17" Target="@13" Category="CallStackDirectCall" Bounds="671.047173404932,196.022503967285,71.783495028453,28.3786621235241" />
+    <Link Source="@17" Target="@8" Category="CallStackDirectCall" Bounds="639.814279019982,196.022503967285,1.23982252243775,22.7008984112349" />
+    <Link Source="@18" Target="@11" Category="CallStackDirectCall" Bounds="231.150484146998,196.022503967285,1.84594484592606,22.7170720691276" />
+    <Link Source="@18" Target="@15" Category="CallStackDirectCall" Bounds="168.407421067715,190.636838175169,25.8409198950125,5.21068059350574">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@19" Target="(Name=line2Dup::ColorGradientPyramid::pyrDown @1 @5 @3)" Category="CallStackDirectCall" Bounds="483.86810371236,196.022503967285,12.6898785781024,23.7495835889654" />
+    <Link Source="@19" Target="@11" Category="CallStackDirectCall" Bounds="283.41739892171,195.958838891062,140.247819835239,32.9406342463081" />
+    <Link Source="@19" Target="@7" Category="CallStackDirectCall" Bounds="400.964526996528,196.022503967285,52.1997716186069,27.493416271995" />
+    <Link Source="@19" Target="@8" Category="CallStackDirectCall" Bounds="513.727287223176,196.022503967285,83.3961059001444,28.7538975718373" />
+    <Link Source="@20" Target="@6" Category="CallStackDirectCall" Bounds="101.125001866256,383.520417381069,1.81274619137639E-06,21.0001" />
+    <Link Source="@22" Target="@23" Category="CallStackDirectCall" Bounds="269.124992370605,383.520417381069,0,21.0001" />
+    <Link Source="@23" Target="(Name=&quot;std::_Construct_in_place&lt;line2Dup::ColorGradientPyramid,cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 @5 OverloadingParameters=[(Type=&quot;line2Dup::ColorGradientPyramid &amp;&quot; Name=_Obj),(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@21 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@21 Name=&lt;_Args_4&gt;)] @3)" Category="CallStackDirectCall" Bounds="269.124995843266,438.760517381069,5.83692667532887E-06,21.2119813982285" />
+    <Link Source="@24" Target="@20" Category="CallStackIndirectCall" Bounds="138.869351698303,328.280317381069,61.7846731467353,26.4572980418453" Label="外部代码" LabelBounds="120.974398947636,324.430441036308,48,15.24" />
+    <Link Source="@24" Target="@22" Category="CallStackDirectCall" Bounds="239.03483595038,328.280317381069,15.9895599048326,22.6478265045475" />
+    <Link Source="@25" Target="(Name=line2Dup::hysteresisGradient @1 @5 OverloadingParameters=[(@14 Name=magnitude),(@14 Name=quantized_angle),(@14 Name=angle),(@16 Name=threshold)] @3)" Category="CallStackDirectCall" Bounds="82.125,494.212493896484,0,22.6875305175781" />
+    <Link Source="@4" Target="@12" Category="CallStackDirectCall" Bounds="477.125,82.1675033569336,0,22.6875">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@6" Target="@25" Category="CallStackDirectCall" Bounds="89.366356937172,438.760517381069,7.43454148964852,21.6978977046498" />
+    <Link Source="@7" Target="(Name=line2Dup::ColorGradientPyramid::selectScatteredFeatures @1 Type=bool OverloadingParameters=[(Type=&quot;const std::vector&lt;line2Dup::ColorGradientPyramid::Candidate,std::allocator&lt;line2Dup::ColorGradientPyramid::Candidate&gt;&gt; &amp;&quot; Name=candidates),(Type=&quot;std::vector&lt;line2Dup::Feature,std::allocator&lt;line2Dup::Feature&gt;&gt; &amp;&quot; Name=features),(Type=&quot;unsigned __int64&quot; Name=num_features),(@16 Name=distance)] @3)" Category="CallStackDirectCall" Bounds="373.271513282613,252.950009460449,7.76215016689827,23.1542334252031" />
+    <Link Source="ExternalCodeRootNode" Target="@4" Category="CallStackIndirectCall" Bounds="477.125,25.2399997711182,0,22.6875019073486">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+  </Links>
+  <Categories>
+    <Category Id="BaseCustomContent" CanBeDataDriven="True" IsProviderRoot="False" />
+    <Category Id="CallStackDirectCall" Label="调用堆栈直接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈直接调用" OutgoingActionLabel="调用堆栈直接调用" />
+    <Category Id="CallStackEntry" Label="调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="调用堆栈入口" />
+    <Category Id="CallStackIndirectCall" Label="调用堆栈间接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈间接调用" OutgoingActionLabel="调用堆栈间接调用" />
+    <Category Id="CodeSchema_CallStackUnresolvedMethod" Label="未解析的方法" CanBeDataDriven="True" DefaultAction="Microsoft.AllOutBoundLinks" IsProviderRoot="False" NavigationActionLabel="未解析的方法" />
+    <Category Id="CodeSchema_SourceLocation" Label="源位置" Icon="File" />
+    <Category Id="CurrentCallStackCall" Label="当前调用堆栈调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="当前调用堆栈调用" OutgoingActionLabel="当前调用堆栈调用" />
+    <Category Id="CurrentCallStackEntry" Label="当前调用堆栈入口" BasedOn="BaseCustomContent" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="当前调用堆栈入口" />
+    <Category Id="ExternalCallStackEntry" Label="外部调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="外部调用堆栈入口" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsExternal" Label="是外部的" Description="一个标志，用于指示此节点是否被认为是外部的" DataType="System.Boolean" />
+    <Property Id="DataVirtualized" Label="已虚拟化数据" Description="如果为 true，则图中可以包含表示虚拟化节点/链接(即，不在图中实际创建)的数据的节点和链接。" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="起始行号" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="程序集" ValueType="Uri" />
+    <Name Id="IsUnresolved" Label="是无法解析的" ValueType="System.String" />
+    <Name Id="Name" Label="名称" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="参数" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="Type" Label="类型" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=orig_test.exe" />
+    <Alias n="2" Id="Type=int" />
+    <Alias n="3" Id="IsUnresolved=True" />
+    <Alias n="4" Id="(Name=main @1 @2 @3)" />
+    <Alias n="5" Id="Type=void" />
+    <Alias n="6" Id="(Name=line2Dup::ColorGradientPyramid::update @1 @5 @3)" />
+    <Alias n="7" Id="(Name=line2Dup::ColorGradientPyramid::extractTemplate @1 Type=bool OverloadingParameters=[(Type=&quot;line2Dup::Template &amp;&quot; Name=templ)] @3)" />
+    <Alias n="8" Id="(Name=line2Dup::cropTemplates @1 Type=cv::Rect_&lt;int&gt; OverloadingParameters=[(Type=&quot;std::vector&lt;line2Dup::Template,std::allocator&lt;line2Dup::Template&gt;&gt; &amp;&quot; Name=templates)] @3)" />
+    <Alias n="9" Id="Type=cv::Point_&lt;float&gt;" />
+    <Alias n="10" Id="Type=&quot;const cv::Mat &amp;&quot;" />
+    <Alias n="11" Id="(Name=line2Dup::ColorGradient::process @1 Type=cv::Ptr&lt;line2Dup::ColorGradientPyramid&gt; OverloadingParameters=[(Type=&quot;const cv::Mat&quot; Name=src),(@10 Name=mask)] @3)" />
+    <Alias n="12" Id="(Name=angle_test @1 @5 OverloadingParameters=[(Type=std::string Name=mode),(Type=bool Name=use_rot)] @3)" />
+    <Alias n="13" Id="(Name=line2Dup::rotatePoint @1 @9 OverloadingParameters=[(@9 Name=inPoint),(@9 Name=center),(Type=&quot;const double&quot; Name=angRad)] @3)" />
+    <Alias n="14" Id="Type=&quot;cv::Mat &amp;&quot;" />
+    <Alias n="15" Id="(Name=line2Dup::spread @1 @5 OverloadingParameters=[(@10 Name=src),(@14 Name=dst),(@2 Name=T)] @3)" />
+    <Alias n="16" Id="Type=float" />
+    <Alias n="17" Id="(Name=line2Dup::Detector::addTemplate_rotate @1 @2 OverloadingParameters=[(Type=&quot;const std::string &amp;&quot; Name=class_id),(@2 Name=zero_id),(@16 Name=theta),(@9 Name=center)] @3)" />
+    <Alias n="18" Id="(Name=line2Dup::Detector::match @1 Type=&quot;std::vector&lt;line2Dup::Match,std::allocator&lt;line2Dup::Match&gt;&gt;&quot; OverloadingParameters=[(Type=cv::Mat Name=source),(@16 Name=threshold),(Type=&quot;const std::vector&lt;std::string,std::allocator&lt;std::string&gt;&gt; &amp;&quot; Name=class_ids),(Type=&quot;const cv::Mat&quot; Name=mask)] @3)" />
+    <Alias n="19" Id="(Name=line2Dup::Detector::addTemplate @1 @2 OverloadingParameters=[(Type=&quot;const cv::Mat&quot; Name=source),(Type=&quot;const std::string &amp;&quot; Name=class_id),(@10 Name=object_mask),(@2 Name=num_features)] @3)" />
+    <Alias n="20" Id="(Name=line2Dup::ColorGradientPyramid::ColorGradientPyramid @1 @5 OverloadingParameters=[(@10 Name=_src),(@10 Name=_mask),(@16 Name=_weak_threshold),(Type=&quot;unsigned __int64&quot; Name=_num_features),(@16 Name=_strong_threshold)] @3)" />
+    <Alias n="21" Id="Type=&quot;const float &amp;&quot;" />
+    <Alias n="22" Id="(Name=&quot;std::make_shared&lt;line2Dup::ColorGradientPyramid,cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 Type=std::shared_ptr&lt;line2Dup::ColorGradientPyramid&gt; OverloadingParameters=[(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@21 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@21 Name=&lt;_Args_4&gt;)] @3)" />
+    <Alias n="23" Id="(Name=&quot;std::_Ref_count_obj2&lt;line2Dup::ColorGradientPyramid&gt;::_Ref_count_obj2&lt;line2Dup::ColorGradientPyramid&gt;&lt;cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 @5 OverloadingParameters=[(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@21 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@21 Name=&lt;_Args_4&gt;)] @3)" />
+    <Alias n="24" Id="(Name=&quot;cv::makePtr&lt;line2Dup::ColorGradientPyramid,cv::Mat,cv::Mat,float,unsigned __int64,float&gt;&quot; @1 Type=cv::Ptr&lt;line2Dup::ColorGradientPyramid&gt; OverloadingParameters=[(@10 Name=&lt;a1_0&gt;),(@10 Name=&lt;a1_1&gt;),(@21 Name=&lt;a1_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;a1_3&gt;),(@21 Name=&lt;a1_4&gt;)] @3)" />
+    <Alias n="25" Id="(Name=line2Dup::quantizedOrientations @1 @5 OverloadingParameters=[(@10 Name=src),(@14 Name=magnitude),(@14 Name=angle),(@14 Name=angle_ori),(@16 Name=threshold)] @3)" />
+    <Alias n="26" Id="Type=&quot;const int&quot;" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Link" GroupLabel="Current Call Stack Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CurrentCallStackCall')" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+      <Setter Property="Weight" Value="1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Indirect Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackIndirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+      <Setter Property="StrokeDashArray" Value="4 1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Direct Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackDirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="源位置" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_SourceLocation')" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="当前调用堆栈(无源)" ValueLabel="True">
+      <Condition Expression="HasCategory('CurrentCallStackEntry') And !HasCategory('CodeSchema_SourceLocation')" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground" Value="#FFA5A5A5" />
+      <Setter Property="Stroke" Value="#FF0072C6" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="External And Current" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('ExternalCallStackEntry') And HasCategory('CurrentCallStackEntry')" />
+      <Setter Property="Background" Value="#FFFFF8F0" />
+      <Setter Property="Stroke" Value="#FFCE5100" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="当前调用堆栈(源)" ValueLabel="True">
+      <Condition Expression="HasCategory('CurrentCallStackEntry') And !HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFFFE3C6" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="外部调用堆栈" ValueLabel="True">
+      <Condition Expression="HasCategory('ExternalCallStackEntry')" />
+      <Setter Property="Background" Value="#FFF7F7F7" />
+      <Setter Property="StrokeDashArray" Value="1 3" />
+      <Setter Property="Foreground" Value="#FF717171" />
+      <Setter Property="Stroke" Value="#FFA5A5A5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="结果" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="测试项目" ValueLabel="测试项目">
+      <Condition Expression="HasCategory('CodeMap_TestProject')" />
+      <Setter Property="Icon" Value="CodeMap_TestProject" />
+      <Setter Property="Background" Value="#FF307A69" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Web 项目" ValueLabel="Web 项目">
+      <Condition Expression="HasCategory('CodeMap_WebProject')" />
+      <Setter Property="Icon" Value="CodeMap_WebProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Windows 应用商店项目" ValueLabel="Windows 应用商店项目">
+      <Condition Expression="HasCategory('CodeMap_WindowsStoreProject')" />
+      <Setter Property="Icon" Value="CodeMap_WindowsStoreProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="电话项目" ValueLabel="电话项目">
+      <Condition Expression="HasCategory('CodeMap_PhoneProject')" />
+      <Setter Property="Icon" Value="CodeMap_PhoneProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="可移植库" ValueLabel="可移植库">
+      <Condition Expression="HasCategory('CodeMap_PortableLibraryProject')" />
+      <Setter Property="Icon" Value="CodeMap_PortableLibraryProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="WPF 项目" ValueLabel="WPF 项目">
+      <Condition Expression="HasCategory('CodeMap_WpfProject')" />
+      <Setter Property="Icon" Value="CodeMap_WpfProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="VSIX 项目" ValueLabel="VSIX 项目">
+      <Condition Expression="HasCategory('CodeMap_VsixProject')" />
+      <Setter Property="Icon" Value="CodeMap_VsixProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="建模项目" ValueLabel="建模项目">
+      <Condition Expression="HasCategory('CodeMap_ModelingProject')" />
+      <Setter Property="Icon" Value="CodeMap_ModelingProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="程序集" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="命名空间" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="接口" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="结构" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="枚举" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="委托" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF0E70C0" />
+      <Setter Property="Stroke" Value="#FF0E70C0" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="属性" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="方法" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="事件" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="字段" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out 参数" ValueLabel="具有类别">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="参数" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="局部变量" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="外部" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="继承自" ValueLabel="True">
+      <Condition Expression="HasCategory('InheritsFrom')" />
+      <Setter Property="Stroke" Value="#FF00A600" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="实现" ValueLabel="True">
+      <Condition Expression="HasCategory('Implements')" />
+      <Setter Property="Stroke" Value="#8000A600" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="调用" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Calls')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="函数指针" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FunctionPointer')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="字段读取" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="字段写入" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldWrite')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="DrawArrow" Value="true" />
+      <Setter Property="IsHidden" Value="false" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="返回" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_ReturnTypeLink')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="引用" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('References')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="使用特性" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_AttributeUse')" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="解决方案文件夹" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeMap_SolutionFolder')" />
+      <Setter Property="Background" Value="#FFDEBA83" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="项目引用" ValueLabel="项目引用">
+      <Condition Expression="HasCategory('CodeMap_ProjectReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="外部引用" ValueLabel="外部引用">
+      <Condition Expression="HasCategory('CodeMap_ExternalReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

@@ -1,0 +1,11 @@
+build/
+.idea/
+.vscode/
+CMakeLists.txt.user
+.vs/
+x64/
+out/
+CMakeFiles/
+*.sln
+*.vcxproj
+*.vcsproj.filters
