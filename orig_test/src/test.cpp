@@ -327,6 +327,8 @@ void angle_test(string mode = "test", bool use_rot = true){
         std::cout << "matches.size(): " << matches.size() << std::endl;
         size_t top5 = 1;
         if(top5>matches.size()) top5=matches.size();
+
+        //显示similarity最大的match结果
         for(size_t i=0; i<top5; i++){
             auto match = matches[i];
             auto templ = detector.getTemplates("test",

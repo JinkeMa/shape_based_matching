@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>F:\mjk\clibtool\shape_based_matching-master\CUDA\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>F:\mjk\clibtool\shape_based_matching-master\x64\debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>F:\mjk\clibtool\shape_based_matching-master\x64\bin\Debug\cuda_exe.exe</FullPath>

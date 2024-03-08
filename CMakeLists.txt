@@ -43,7 +43,7 @@ set(LINE2DUP_INCLUDEPATH ${CMAKE_SOURCE_DIR}/line2Dup)
 #包含外部脚本
 include(cmake/opencv.cmake)
 include(cmake/cuda.cmake)
-
+include(cmake/json.cmake)
 #综合库目录
 list(APPEND EXTERN_LIBPATH ${OPENCV_LIBPATH} )
 list(APPEND EXTERN_LIBNAME ${OPENCV_LIBNAME} )

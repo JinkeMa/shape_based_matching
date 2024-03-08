@@ -8,4 +8,9 @@ out/
 CMakeFiles/
 *.sln
 *.vcxproj
-*.vcsproj.filters
+*.filters
+*_install.cmake
+*.png
+*dir/
+/Debug/
+/Release/

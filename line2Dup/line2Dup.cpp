@@ -558,6 +558,7 @@ static void orUnaligned8u(const uchar *src, const int src_stride,
                           uchar *dst, const int dst_stride,
                           const int width, const int height)
 {
+    //这里似乎没有考虑dst的右下部份，一直在对dst的左上部分进行or操作，每次截取src的一部分拿来与dst进行or操作
     for (int r = 0; r < height; ++r)
     {
         int c = 0;

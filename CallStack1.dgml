@@ -1,152 +1,158 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DirectedGraph DataVirtualized="True" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="(Name=&quot;std::_Construct_in_place&lt;line2Dup::ColorGradientPyramid,cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 @5 OverloadingParameters=[(Type=&quot;line2Dup::ColorGradientPyramid &amp;&quot; Name=_Obj),(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@21 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@21 Name=&lt;_Args_4&gt;)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="194.835,468.9725,148.58,25.24" CodeSchemaProperty_IsExternal="True" Label="_Construct_in_place" SourceLocation="(Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include/xutility&quot; StartLineNumber=149 StartCharacterOffset=0 EndLineNumber=149 EndCharacterOffset=0)">
+    <Node Id="(Name=&quot;std::_Construct_in_place&lt;line2Dup::ColorGradientPyramid,cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 @5 OverloadingParameters=[(Type=&quot;line2Dup::ColorGradientPyramid &amp;&quot; Name=_Obj),(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@23 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@23 Name=&lt;_Args_4&gt;)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="357.565,468.9725,148.58,25.24" CodeSchemaProperty_IsExternal="True" Label="_Construct_in_place" SourceLocation="(Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include/xutility&quot; StartLineNumber=149 StartCharacterOffset=0 EndLineNumber=149 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="(Name=line2Dup::ColorGradientPyramid::pyrDown @1 @5 @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="463.425825386047,227.710009460449,88.2333333333333,25.24" Label="pyrDown" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=399 StartCharacterOffset=0 EndLineNumber=399 EndCharacterOffset=0)">
+    <Node Id="(Name=line2Dup::ColorGradientPyramid::pyrDown @1 @5 @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="824.738333333333,227.71,88.2333333333333,25.24" Label="pyrDown" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=399 StartCharacterOffset=0 EndLineNumber=399 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=line2Dup::ColorGradientPyramid::selectScatteredFeatures @1 Type=bool OverloadingParameters=[(Type=&quot;const std::vector&lt;line2Dup::ColorGradientPyramid::Candidate,std::allocator&lt;line2Dup::ColorGradientPyramid::Candidate&gt;&gt; &amp;&quot; Name=candidates),(Type=&quot;std::vector&lt;line2Dup::Feature,std::allocator&lt;line2Dup::Feature&gt;&gt; &amp;&quot; Name=features),(Type=&quot;unsigned __int64&quot; Name=num_features),(@16 Name=distance)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="302.186666666667,284.6375,171.876666666667,25.24" Label="selectScatteredFeatures" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=155 StartCharacterOffset=0 EndLineNumber=155 EndCharacterOffset=0)">
+    <Node Id="(Name=line2Dup::ColorGradientPyramid::selectScatteredFeatures @1 Type=bool OverloadingParameters=[(Type=&quot;const std::vector&lt;line2Dup::ColorGradientPyramid::Candidate,std::allocator&lt;line2Dup::ColorGradientPyramid::Candidate&gt;&gt; &amp;&quot; Name=candidates),(Type=&quot;std::vector&lt;line2Dup::Feature,std::allocator&lt;line2Dup::Feature&gt;&gt; &amp;&quot; Name=features),(Type=&quot;unsigned __int64&quot; Name=num_features),(@17 Name=distance)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="643.916666666666,284.6375,171.876666666667,25.24" Label="selectScatteredFeatures" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=155 StartCharacterOffset=0 EndLineNumber=155 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=line2Dup::hysteresisGradient @1 @5 OverloadingParameters=[(@14 Name=magnitude),(@14 Name=quantized_angle),(@14 Name=angle),(@16 Name=threshold)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="11.1499999999999,525.9,141.95,25.24" Label="hysteresisGradient" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=213 StartCharacterOffset=0 EndLineNumber=213 EndCharacterOffset=0)">
+    <Node Id="(Name=line2Dup::accessLinearMemory @1 Type=&quot;const unsigned char *&quot; OverloadingParameters=[(Type=&quot;const std::vector&lt;cv::Mat,std::allocator&lt;cv::Mat&gt;&gt; &amp;&quot; Name=linear_memories),(Type=&quot;const line2Dup::Feature &amp;&quot; Name=f),@15,(@2 Name=W)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="209.008333333333,355.1175,155.693333333333,25.24" Label="accessLinearMemory" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=778 StartCharacterOffset=0 EndLineNumber=778 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=line2Dup::orUnaligned8u @1 @5 OverloadingParameters=[(Type=&quot;const unsigned char *&quot; Name=src),(@26 Name=src_stride),(Type=&quot;unsigned char *&quot; Name=dst),(@26 Name=dst_stride),(@26 Name=width),(@26 Name=height)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="43.2724920527141,247.800217381069,121.573333333333,25.24" Label="orUnaligned8u" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=552 StartCharacterOffset=0 EndLineNumber=552 EndCharacterOffset=0)">
-      <Category Ref="CallStackEntry" />
-      <Category Ref="CodeSchema_SourceLocation" />
-      <Category Ref="CurrentCallStackEntry" />
-    </Node>
-    <Node Id="(Name=line2Dup::rotate2d @1 @9 OverloadingParameters=[(@9 Name=inPoint),(Type=&quot;const double&quot; Name=angRad)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="737.47,284.6375,85.3099999999999,25.24" Label="rotate2d" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1309 StartCharacterOffset=0 EndLineNumber=1309 EndCharacterOffset=0)">
+    <Node Id="(Name=line2Dup::computeResponseMaps @1 @5 OverloadingParameters=[(@10 Name=src),(Type=&quot;std::vector&lt;cv::Mat,std::allocator&lt;cv::Mat&gt;&gt; &amp;&quot; Name=response_maps)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="350.831666666666,227.71,174.046666666667,25.24" Label="computeResponseMaps" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=613 StartCharacterOffset=0 EndLineNumber=613 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@11" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="194.845825386047,227.710009460449,79.81,25.24" Label="process" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.h StartLineNumber=103 StartCharacterOffset=0 EndLineNumber=103 EndCharacterOffset=0)">
+    <Node Id="(Name=line2Dup::hysteresisGradient @1 @5 OverloadingParameters=[(@14 Name=magnitude),(@14 Name=quantized_angle),(@14 Name=angle),@19] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="547.88,525.9,141.95,25.24" Label="hysteresisGradient" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=213 StartCharacterOffset=0 EndLineNumber=213 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@12" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="429.93,113.854999999999,94.3899999999999,25.24" Label="angle_test" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/orig_test/src/test.cpp StartLineNumber=321 StartCharacterOffset=0 EndLineNumber=321 EndCharacterOffset=0)">
-      <Category Ref="CallStackEntry" />
-      <Category Ref="CodeSchema_SourceLocation" />
-      <Category Ref="CurrentCallStackEntry" />
-    </Node>
-    <Node Id="@13" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="732.809158719381,227.710009460449,100.626666666667,25.24" Label="rotatePoint" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1317 StartCharacterOffset=0 EndLineNumber=1317 EndCharacterOffset=0)">
+    <Node Id="(Name=line2Dup::linearize @1 @5 OverloadingParameters=[(@10 Name=response_map),(@14 Name=linearized),@15] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="0,227.71,83.71,25.24" Label="linearize" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=726 StartCharacterOffset=0 EndLineNumber=726 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@15" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="84.6649961853027,192.560117381069,74.92,25.24" Label="spread" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=600 StartCharacterOffset=0 EndLineNumber=600 EndCharacterOffset=0)">
-      <Category Ref="CallStackEntry" />
-      <Category Ref="CodeSchema_SourceLocation" />
-      <Category Ref="CurrentCallStackEntry" />
-    </Node>
-    <Node Id="@17" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="563.291666666667,170.7825,151.666666666667,25.24" Label="addTemplate_rotate" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1359 StartCharacterOffset=0 EndLineNumber=1359 EndCharacterOffset=0)">
+    <Node Id="(Name=line2Dup::orUnaligned8u @1 @5 OverloadingParameters=[(Type=&quot;const unsigned char *&quot; Name=src),(@29 Name=src_stride),(Type=&quot;unsigned char *&quot; Name=dst),(@29 Name=dst_stride),(@29 Name=width),(@29 Name=height)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="91.0683333333334,284.6375,121.573333333333,25.24" Label="orUnaligned8u" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=552 StartCharacterOffset=0 EndLineNumber=552 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@18" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="194.248333333333,170.7825,71.7533333333333,25.24" Label="match" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1083 StartCharacterOffset=0 EndLineNumber=1083 EndCharacterOffset=0)">
-      <Category Ref="CallStackEntry" />
-      <Category Ref="CodeSchema_SourceLocation" />
-      <Category Ref="CurrentCallStackEntry" />
-    </Node>
-    <Node Id="@19" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="421.28,170.7825,111.69,25.24" Label="addTemplate" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1300 StartCharacterOffset=0 EndLineNumber=1300 EndCharacterOffset=0)">
+    <Node Id="(Name=line2Dup::rotate2d @1 @9 OverloadingParameters=[(@9 Name=inPoint),(Type=&quot;const double&quot; Name=angRad)] @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1102.2,284.6375,85.3099999999999,25.24" Label="rotate2d" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1309 StartCharacterOffset=0 EndLineNumber=1309 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@20" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="19.2400047683716,358.280417381069,163.77,25.24" Label="ColorGradientPyramid" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=389 StartCharacterOffset=0 EndLineNumber=389 EndCharacterOffset=0)">
+    <Node Id="@11" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="554.95,227.71,79.8099999999999,25.24" Label="process" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.h StartLineNumber=103 StartCharacterOffset=0 EndLineNumber=103 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@22" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="213.501659037272,358.280417381069,111.246666666667,25.24" CodeSchemaProperty_IsExternal="True" Label="make_shared" SourceLocation="(Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include/memory&quot; StartLineNumber=2725 StartCharacterOffset=0 EndLineNumber=2725 EndCharacterOffset=0)">
+    <Node Id="@12" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="794.66,113.855,94.3899999999999,25.24" Label="angle_test" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/orig_test/src/test.cpp StartLineNumber=321 StartCharacterOffset=0 EndLineNumber=321 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@13" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1094.54166666667,227.71,100.626666666667,25.24" Label="rotatePoint" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1317 StartCharacterOffset=0 EndLineNumber=1317 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@16" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="114.395,227.71,74.9200000000001,25.24" Label="spread" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=603 StartCharacterOffset=0 EndLineNumber=603 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@18" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="928.021666666666,170.7825,151.666666666667,25.24" Label="addTemplate_rotate" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1359 StartCharacterOffset=0 EndLineNumber=1359 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@20" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="401.978333333333,170.7825,71.7533333333333,25.24" Label="match" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1110 StartCharacterOffset=0 EndLineNumber=1110 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@21" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="786.01,170.7825,111.69,25.24" Label="addTemplate" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1300 StartCharacterOffset=0 EndLineNumber=1300 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@22" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="536.97,355.1175,163.77,25.24" Label="ColorGradientPyramid" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=389 StartCharacterOffset=0 EndLineNumber=389 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@24" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="395.231666666666,355.1175,111.246666666667,25.24" CodeSchemaProperty_IsExternal="True" Label="make_shared" SourceLocation="(Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include/memory&quot; StartLineNumber=2725 StartCharacterOffset=0 EndLineNumber=2725 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="@23" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="204.433325703939,413.520517381069,129.383333333333,25.24" CodeSchemaProperty_IsExternal="True" Label="_Ref_count_obj2" SourceLocation="(Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include/memory&quot; StartLineNumber=2006 StartCharacterOffset=0 EndLineNumber=2006 EndCharacterOffset=0)">
+    <Node Id="@25" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="386.163333333333,412.045,129.383333333333,25.24" CodeSchemaProperty_IsExternal="True" Label="_Ref_count_obj2" SourceLocation="(Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include/memory&quot; StartLineNumber=2006 StartCharacterOffset=0 EndLineNumber=2006 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="@24" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="188.316674296061,303.040317381069,83.6166666666667,25.24" Label="makePtr" SourceLocation="(Assembly=file:///D:/OpenCV480/lib/include/opencv2/core/cvstd_wrapper.hpp StartLineNumber=144 StartCharacterOffset=0 EndLineNumber=144 EndCharacterOffset=0)">
+    <Node Id="@26" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="530.046666666667,284.6375,83.6166666666668,25.24" Label="makePtr" SourceLocation="(Assembly=file:///D:/OpenCV480/lib/include/opencv2/core/cvstd_wrapper.hpp StartLineNumber=144 StartCharacterOffset=0 EndLineNumber=144 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@25" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="0,468.9725,164.25,25.24" Label="quantizedOrientations" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=320 StartCharacterOffset=0 EndLineNumber=320 EndCharacterOffset=0)">
+    <Node Id="@27" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="243.051666666667,284.6375,87.6066666666667,25.24" Label="similarity" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=832 StartCharacterOffset=0 EndLineNumber=832 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@4" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="444.893333333333,56.9274999999994,64.4633333333334,25.24" Label="main" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/orig_test/src/test.cpp StartLineNumber=511 StartCharacterOffset=0 EndLineNumber=511 EndCharacterOffset=0)">
-      <Category Ref="CallStackEntry" />
-      <Category Ref="CodeSchema_SourceLocation" />
-      <Category Ref="CurrentCallStackEntry" />
-    </Node>
-    <Node Id="@6" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="62.8016666666667,413.520517381069,76.6466666666667,25.24" Label="update" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=395 StartCharacterOffset=0 EndLineNumber=395 EndCharacterOffset=0)">
+    <Node Id="@28" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="536.73,468.9725,164.25,25.24" Label="quantizedOrientations" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=320 StartCharacterOffset=0 EndLineNumber=320 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@7" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="304.655825386047,227.710009460449,128.77,25.24" Label="extractTemplate" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=499 StartCharacterOffset=0 EndLineNumber=499 EndCharacterOffset=0)">
+    <Node Id="@30" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="219.498333333333,227.71,100.713333333333,25.24" Label="matchClass" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=1166 StartCharacterOffset=0 EndLineNumber=1166 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@8" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="581.659158719381,227.710009460449,121.15,25.24" Label="cropTemplates" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=148 StartCharacterOffset=0 EndLineNumber=148 EndCharacterOffset=0)">
+    <Node Id="@4" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="809.623333333333,56.9274999999998,64.4633333333334,25.24" Label="main" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/orig_test/src/test.cpp StartLineNumber=513 StartCharacterOffset=0 EndLineNumber=513 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="ExternalCodeRootNode" Category="ExternalCallStackEntry" Bounds="443.125,0,68,25.24" Label="外部代码">
+    <Node Id="@6" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="580.531666666667,412.045,76.6466666666665,25.24" Label="update" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=395 StartCharacterOffset=0 EndLineNumber=395 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
-      <Category Ref="CurrentCallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@7" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="665.47,227.71,128.77,25.24" Label="extractTemplate" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=499 StartCharacterOffset=0 EndLineNumber=499 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@8" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="943.28,227.71,121.15,25.24" Label="cropTemplates" SourceLocation="(Assembly=file:///F:/mjk/clibtool/shape_based_matching-master/line2Dup/line2Dup.cpp StartLineNumber=148 StartCharacterOffset=0 EndLineNumber=148 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="ExternalCodeRootNode" Category="ExternalCallStackEntry" Bounds="807.855,-1.77635683940025E-15,68,25.24" Label="外部代码">
+      <Category Ref="CallStackEntry" />
     </Node>
   </Nodes>
   <Links>
-    <Link Source="@11" Target="@24" Category="CallStackDirectCall" Bounds="231.451590641865,252.950009460449,2.52427680626323,41.1072288395289" />
-    <Link Source="@12" Target="@17" Category="CallStackDirectCall" Bounds="513.038024902344,139.095001220703,81.6829223632813,28.7037200927734" />
-    <Link Source="@12" Target="@18" Category="CallStackDirectCall" Bounds="274.771759033203,137.294616699219,155.408538818359,35.8178863525391">
-      <Category Ref="CurrentCallStackCall" />
-    </Link>
-    <Link Source="@12" Target="@19" Category="CallStackDirectCall" Bounds="477.125,139.095001220703,0,22.6875" />
-    <Link Source="@13" Target="(Name=line2Dup::rotate2d @1 @9 OverloadingParameters=[(@9 Name=inPoint),(Type=&quot;const double&quot; Name=angRad)] @3)" Category="CallStackDirectCall" Bounds="781.262716956966,252.950009460449,1.19526784957304,22.6999484933208" />
-    <Link Source="@15" Target="(Name=line2Dup::orUnaligned8u @1 @5 OverloadingParameters=[(Type=&quot;const unsigned char *&quot; Name=src),(@26 Name=src_stride),(Type=&quot;unsigned char *&quot; Name=dst),(@26 Name=dst_stride),(@26 Name=width),(@26 Name=height)] @3)" Category="CallStackDirectCall" Bounds="110.983999233416,217.800117381069,7.01372584231314,21.4459427985443">
-      <Category Ref="CurrentCallStackCall" />
-    </Link>
-    <Link Source="@17" Target="@13" Category="CallStackDirectCall" Bounds="671.047173404932,196.022503967285,71.783495028453,28.3786621235241" />
-    <Link Source="@17" Target="@8" Category="CallStackDirectCall" Bounds="639.814279019982,196.022503967285,1.23982252243775,22.7008984112349" />
-    <Link Source="@18" Target="@11" Category="CallStackDirectCall" Bounds="231.150484146998,196.022503967285,1.84594484592606,22.7170720691276" />
-    <Link Source="@18" Target="@15" Category="CallStackDirectCall" Bounds="168.407421067715,190.636838175169,25.8409198950125,5.21068059350574">
-      <Category Ref="CurrentCallStackCall" />
-    </Link>
-    <Link Source="@19" Target="(Name=line2Dup::ColorGradientPyramid::pyrDown @1 @5 @3)" Category="CallStackDirectCall" Bounds="483.86810371236,196.022503967285,12.6898785781024,23.7495835889654" />
-    <Link Source="@19" Target="@11" Category="CallStackDirectCall" Bounds="283.41739892171,195.958838891062,140.247819835239,32.9406342463081" />
-    <Link Source="@19" Target="@7" Category="CallStackDirectCall" Bounds="400.964526996528,196.022503967285,52.1997716186069,27.493416271995" />
-    <Link Source="@19" Target="@8" Category="CallStackDirectCall" Bounds="513.727287223176,196.022503967285,83.3961059001444,28.7538975718373" />
-    <Link Source="@20" Target="@6" Category="CallStackDirectCall" Bounds="101.125001866256,383.520417381069,1.81274619137639E-06,21.0001" />
-    <Link Source="@22" Target="@23" Category="CallStackDirectCall" Bounds="269.124992370605,383.520417381069,0,21.0001" />
-    <Link Source="@23" Target="(Name=&quot;std::_Construct_in_place&lt;line2Dup::ColorGradientPyramid,cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 @5 OverloadingParameters=[(Type=&quot;line2Dup::ColorGradientPyramid &amp;&quot; Name=_Obj),(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@21 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@21 Name=&lt;_Args_4&gt;)] @3)" Category="CallStackDirectCall" Bounds="269.124995843266,438.760517381069,5.83692667532887E-06,21.2119813982285" />
-    <Link Source="@24" Target="@20" Category="CallStackIndirectCall" Bounds="138.869351698303,328.280317381069,61.7846731467353,26.4572980418453" Label="外部代码" LabelBounds="120.974398947636,324.430441036308,48,15.24" />
-    <Link Source="@24" Target="@22" Category="CallStackDirectCall" Bounds="239.03483595038,328.280317381069,15.9895599048326,22.6478265045475" />
-    <Link Source="@25" Target="(Name=line2Dup::hysteresisGradient @1 @5 OverloadingParameters=[(@14 Name=magnitude),(@14 Name=quantized_angle),(@14 Name=angle),(@16 Name=threshold)] @3)" Category="CallStackDirectCall" Bounds="82.125,494.212493896484,0,22.6875305175781" />
-    <Link Source="@4" Target="@12" Category="CallStackDirectCall" Bounds="477.125,82.1675033569336,0,22.6875">
-      <Category Ref="CurrentCallStackCall" />
-    </Link>
-    <Link Source="@6" Target="@25" Category="CallStackDirectCall" Bounds="89.366356937172,438.760517381069,7.43454148964852,21.6978977046498" />
-    <Link Source="@7" Target="(Name=line2Dup::ColorGradientPyramid::selectScatteredFeatures @1 Type=bool OverloadingParameters=[(Type=&quot;const std::vector&lt;line2Dup::ColorGradientPyramid::Candidate,std::allocator&lt;line2Dup::ColorGradientPyramid::Candidate&gt;&gt; &amp;&quot; Name=candidates),(Type=&quot;std::vector&lt;line2Dup::Feature,std::allocator&lt;line2Dup::Feature&gt;&gt; &amp;&quot; Name=features),(Type=&quot;unsigned __int64&quot; Name=num_features),(@16 Name=distance)] @3)" Category="CallStackDirectCall" Bounds="373.271513282613,252.950009460449,7.76215016689827,23.1542334252031" />
-    <Link Source="ExternalCodeRootNode" Target="@4" Category="CallStackIndirectCall" Bounds="477.125,25.2399997711182,0,22.6875019073486">
-      <Category Ref="CurrentCallStackCall" />
-    </Link>
+    <Link Source="@11" Target="@26" Category="CallStackDirectCall" Bounds="580.3251953125,252.949996948242,9.4310302734375,23.3428497314453" />
+    <Link Source="@12" Target="@18" Category="CallStackDirectCall" Bounds="877.76806640625,139.095001220703,81.682861328125,28.7037200927734" />
+    <Link Source="@12" Target="@20" Category="CallStackDirectCall" Bounds="482.643615722656,133.125228881836,312.016357421875,43.9661254882813" />
+    <Link Source="@12" Target="@21" Category="CallStackDirectCall" Bounds="841.85498046875,139.095001220703,0,22.6875" />
+    <Link Source="@13" Target="(Name=line2Dup::rotate2d @1 @9 OverloadingParameters=[(@9 Name=inPoint),(Type=&quot;const double&quot; Name=angRad)] @3)" Category="CallStackDirectCall" Bounds="1144.85498046875,252.949996948242,0,22.6875152587891" />
+    <Link Source="@16" Target="(Name=line2Dup::orUnaligned8u @1 @5 OverloadingParameters=[(Type=&quot;const unsigned char *&quot; Name=src),(@29 Name=src_stride),(Type=&quot;unsigned char *&quot; Name=dst),(@29 Name=dst_stride),(@29 Name=width),(@29 Name=height)] @3)" Category="CallStackDirectCall" Bounds="151.854995727539,252.949996948242,0,22.6875152587891" />
+    <Link Source="@18" Target="@13" Category="CallStackDirectCall" Bounds="1035.11267089844,196.022506713867,70.13916015625,28.3180847167969" />
+    <Link Source="@18" Target="@8" Category="CallStackDirectCall" Bounds="1003.85498046875,196.022506713867,0,22.6875" />
+    <Link Source="@20" Target="(Name=line2Dup::computeResponseMaps @1 @5 OverloadingParameters=[(@10 Name=src),(Type=&quot;std::vector&lt;cv::Mat,std::allocator&lt;cv::Mat&gt;&gt; &amp;&quot; Name=response_maps)] @3)" Category="CallStackDirectCall" Bounds="437.855010986328,196.022506713867,0,22.6875" />
+    <Link Source="@20" Target="(Name=line2Dup::linearize @1 @5 OverloadingParameters=[(@10 Name=response_map),(@14 Name=linearized),@15] @3)" Category="CallStackDirectCall" Bounds="92.5264511108398,188.559997558594,309.451881408691,40.2219696044922" />
+    <Link Source="@20" Target="@11" Category="CallStackDirectCall" Bounds="471.948486328125,195.7646484375,79.6409301757813,28.87744140625" />
+    <Link Source="@20" Target="@16" Category="CallStackDirectCall" Bounds="198.1328125,190.543655395508,203.845520019531,40.2643280029297" />
+    <Link Source="@20" Target="@30" Category="CallStackDirectCall" Bounds="315.622100830078,195.230926513672,87.3257446289063,29.5906982421875" />
+    <Link Source="@21" Target="(Name=line2Dup::ColorGradientPyramid::pyrDown @1 @5 @3)" Category="CallStackDirectCall" Bounds="847.840515136719,196.022506713867,11.1721801757813,23.5557556152344" />
+    <Link Source="@21" Target="@11" Category="CallStackDirectCall" Bounds="643.530090332031,195.82731628418,144.415466308594,33.2842559814453" />
+    <Link Source="@21" Target="@7" Category="CallStackDirectCall" Bounds="762.706848144531,196.022506713867,54.3193969726563,27.6095123291016" />
+    <Link Source="@21" Target="@8" Category="CallStackDirectCall" Bounds="877.76806640625,196.022506713867,81.682861328125,28.7037200927734" />
+    <Link Source="@22" Target="@6" Category="CallStackDirectCall" Bounds="618.85498046875,380.357513427734,0,22.6875" />
+    <Link Source="@24" Target="@25" Category="CallStackDirectCall" Bounds="450.855010986328,380.357513427734,0,22.6875" />
+    <Link Source="@25" Target="(Name=&quot;std::_Construct_in_place&lt;line2Dup::ColorGradientPyramid,cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 @5 OverloadingParameters=[(Type=&quot;line2Dup::ColorGradientPyramid &amp;&quot; Name=_Obj),(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@23 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@23 Name=&lt;_Args_4&gt;)] @3)" Category="CallStackDirectCall" Bounds="438.916320800781,437.285003662109,7.72665405273438,23.1504211425781" />
+    <Link Source="@26" Target="@22" Category="CallStackIndirectCall" Bounds="580.270690917969,309.877502441406,25.17529296875,37.752197265625" Label="外部代码" LabelBounds="595.355,324.8775,48,15.24" />
+    <Link Source="@26" Target="@24" Category="CallStackDirectCall" Bounds="480.297912597656,309.877502441406,69.89111328125,40.7101135253906" />
+    <Link Source="@27" Target="(Name=line2Dup::accessLinearMemory @1 Type=&quot;const unsigned char *&quot; OverloadingParameters=[(Type=&quot;const std::vector&lt;cv::Mat,std::allocator&lt;cv::Mat&gt;&gt; &amp;&quot; Name=linear_memories),(Type=&quot;const line2Dup::Feature &amp;&quot; Name=f),@15,(@2 Name=W)] @3)" Category="CallStackDirectCall" Bounds="286.855010986328,309.877502441406,0,36.239990234375" />
+    <Link Source="@28" Target="(Name=line2Dup::hysteresisGradient @1 @5 OverloadingParameters=[(@14 Name=magnitude),(@14 Name=quantized_angle),(@14 Name=angle),@19] @3)" Category="CallStackDirectCall" Bounds="618.85498046875,494.212493896484,0,22.6875305175781" />
+    <Link Source="@30" Target="@27" Category="CallStackDirectCall" Bounds="273.623657226563,252.949996948242,6.88742065429688,23.0637969970703" />
+    <Link Source="@4" Target="@12" Category="CallStackDirectCall" Bounds="841.85498046875,82.1675033569336,0,22.6875" />
+    <Link Source="@6" Target="@28" Category="CallStackDirectCall" Bounds="618.85498046875,437.285003662109,0,22.6875" />
+    <Link Source="@7" Target="(Name=line2Dup::ColorGradientPyramid::selectScatteredFeatures @1 Type=bool OverloadingParameters=[(Type=&quot;const std::vector&lt;line2Dup::ColorGradientPyramid::Candidate,std::allocator&lt;line2Dup::ColorGradientPyramid::Candidate&gt;&gt; &amp;&quot; Name=candidates),(Type=&quot;std::vector&lt;line2Dup::Feature,std::allocator&lt;line2Dup::Feature&gt;&gt; &amp;&quot; Name=features),(Type=&quot;unsigned __int64&quot; Name=num_features),(@17 Name=distance)] @3)" Category="CallStackDirectCall" Bounds="729.85498046875,252.949996948242,0,22.6875152587891" />
+    <Link Source="ExternalCodeRootNode" Target="@4" Category="CallStackIndirectCall" Bounds="841.85498046875,25.2399997711182,0,22.6875019073486" />
   </Links>
   <Categories>
-    <Category Id="BaseCustomContent" CanBeDataDriven="True" IsProviderRoot="False" />
     <Category Id="CallStackDirectCall" Label="调用堆栈直接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈直接调用" OutgoingActionLabel="调用堆栈直接调用" />
     <Category Id="CallStackEntry" Label="调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="调用堆栈入口" />
     <Category Id="CallStackIndirectCall" Label="调用堆栈间接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈间接调用" OutgoingActionLabel="调用堆栈间接调用" />
     <Category Id="CodeSchema_CallStackUnresolvedMethod" Label="未解析的方法" CanBeDataDriven="True" DefaultAction="Microsoft.AllOutBoundLinks" IsProviderRoot="False" NavigationActionLabel="未解析的方法" />
     <Category Id="CodeSchema_SourceLocation" Label="源位置" Icon="File" />
-    <Category Id="CurrentCallStackCall" Label="当前调用堆栈调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="当前调用堆栈调用" OutgoingActionLabel="当前调用堆栈调用" />
-    <Category Id="CurrentCallStackEntry" Label="当前调用堆栈入口" BasedOn="BaseCustomContent" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="当前调用堆栈入口" />
     <Category Id="ExternalCallStackEntry" Label="外部调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="外部调用堆栈入口" />
   </Categories>
   <Properties>
@@ -158,7 +164,7 @@
     <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
     <Property Id="Expression" DataType="System.String" />
     <Property Id="GroupLabel" DataType="System.String" />
-    <Property Id="Icon" DataType="System.String" />
+    <Property Id="Icon" Label="图标" Description="图标" DataType="System.String" />
     <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
     <Property Id="IsEnabled" DataType="System.Boolean" />
     <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
@@ -172,6 +178,7 @@
     <Property Id="Value" DataType="System.String" />
     <Property Id="ValueLabel" DataType="System.String" />
     <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+    <Property Id="ZoomLevel" DataType="System.String" />
   </Properties>
   <QualifiedNames>
     <Name Id="Assembly" Label="程序集" ValueType="Uri" />
@@ -195,18 +202,22 @@
     <Alias n="12" Id="(Name=angle_test @1 @5 OverloadingParameters=[(Type=std::string Name=mode),(Type=bool Name=use_rot)] @3)" />
     <Alias n="13" Id="(Name=line2Dup::rotatePoint @1 @9 OverloadingParameters=[(@9 Name=inPoint),(@9 Name=center),(Type=&quot;const double&quot; Name=angRad)] @3)" />
     <Alias n="14" Id="Type=&quot;cv::Mat &amp;&quot;" />
-    <Alias n="15" Id="(Name=line2Dup::spread @1 @5 OverloadingParameters=[(@10 Name=src),(@14 Name=dst),(@2 Name=T)] @3)" />
-    <Alias n="16" Id="Type=float" />
-    <Alias n="17" Id="(Name=line2Dup::Detector::addTemplate_rotate @1 @2 OverloadingParameters=[(Type=&quot;const std::string &amp;&quot; Name=class_id),(@2 Name=zero_id),(@16 Name=theta),(@9 Name=center)] @3)" />
-    <Alias n="18" Id="(Name=line2Dup::Detector::match @1 Type=&quot;std::vector&lt;line2Dup::Match,std::allocator&lt;line2Dup::Match&gt;&gt;&quot; OverloadingParameters=[(Type=cv::Mat Name=source),(@16 Name=threshold),(Type=&quot;const std::vector&lt;std::string,std::allocator&lt;std::string&gt;&gt; &amp;&quot; Name=class_ids),(Type=&quot;const cv::Mat&quot; Name=mask)] @3)" />
-    <Alias n="19" Id="(Name=line2Dup::Detector::addTemplate @1 @2 OverloadingParameters=[(Type=&quot;const cv::Mat&quot; Name=source),(Type=&quot;const std::string &amp;&quot; Name=class_id),(@10 Name=object_mask),(@2 Name=num_features)] @3)" />
-    <Alias n="20" Id="(Name=line2Dup::ColorGradientPyramid::ColorGradientPyramid @1 @5 OverloadingParameters=[(@10 Name=_src),(@10 Name=_mask),(@16 Name=_weak_threshold),(Type=&quot;unsigned __int64&quot; Name=_num_features),(@16 Name=_strong_threshold)] @3)" />
-    <Alias n="21" Id="Type=&quot;const float &amp;&quot;" />
-    <Alias n="22" Id="(Name=&quot;std::make_shared&lt;line2Dup::ColorGradientPyramid,cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 Type=std::shared_ptr&lt;line2Dup::ColorGradientPyramid&gt; OverloadingParameters=[(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@21 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@21 Name=&lt;_Args_4&gt;)] @3)" />
-    <Alias n="23" Id="(Name=&quot;std::_Ref_count_obj2&lt;line2Dup::ColorGradientPyramid&gt;::_Ref_count_obj2&lt;line2Dup::ColorGradientPyramid&gt;&lt;cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 @5 OverloadingParameters=[(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@21 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@21 Name=&lt;_Args_4&gt;)] @3)" />
-    <Alias n="24" Id="(Name=&quot;cv::makePtr&lt;line2Dup::ColorGradientPyramid,cv::Mat,cv::Mat,float,unsigned __int64,float&gt;&quot; @1 Type=cv::Ptr&lt;line2Dup::ColorGradientPyramid&gt; OverloadingParameters=[(@10 Name=&lt;a1_0&gt;),(@10 Name=&lt;a1_1&gt;),(@21 Name=&lt;a1_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;a1_3&gt;),(@21 Name=&lt;a1_4&gt;)] @3)" />
-    <Alias n="25" Id="(Name=line2Dup::quantizedOrientations @1 @5 OverloadingParameters=[(@10 Name=src),(@14 Name=magnitude),(@14 Name=angle),(@14 Name=angle_ori),(@16 Name=threshold)] @3)" />
-    <Alias n="26" Id="Type=&quot;const int&quot;" />
+    <Alias n="15" Id="(@2 Name=T)" />
+    <Alias n="16" Id="(Name=line2Dup::spread @1 @5 OverloadingParameters=[(@10 Name=src),(@14 Name=dst),@15] @3)" />
+    <Alias n="17" Id="Type=float" />
+    <Alias n="18" Id="(Name=line2Dup::Detector::addTemplate_rotate @1 @2 OverloadingParameters=[(Type=&quot;const std::string &amp;&quot; Name=class_id),(@2 Name=zero_id),(@17 Name=theta),(@9 Name=center)] @3)" />
+    <Alias n="19" Id="(@17 Name=threshold)" />
+    <Alias n="20" Id="(Name=line2Dup::Detector::match @1 Type=&quot;std::vector&lt;line2Dup::Match,std::allocator&lt;line2Dup::Match&gt;&gt;&quot; OverloadingParameters=[(Type=cv::Mat Name=source),@19,(Type=&quot;const std::vector&lt;std::string,std::allocator&lt;std::string&gt;&gt; &amp;&quot; Name=class_ids),(Type=&quot;const cv::Mat&quot; Name=mask)] @3)" />
+    <Alias n="21" Id="(Name=line2Dup::Detector::addTemplate @1 @2 OverloadingParameters=[(Type=&quot;const cv::Mat&quot; Name=source),(Type=&quot;const std::string &amp;&quot; Name=class_id),(@10 Name=object_mask),(@2 Name=num_features)] @3)" />
+    <Alias n="22" Id="(Name=line2Dup::ColorGradientPyramid::ColorGradientPyramid @1 @5 OverloadingParameters=[(@10 Name=_src),(@10 Name=_mask),(@17 Name=_weak_threshold),(Type=&quot;unsigned __int64&quot; Name=_num_features),(@17 Name=_strong_threshold)] @3)" />
+    <Alias n="23" Id="Type=&quot;const float &amp;&quot;" />
+    <Alias n="24" Id="(Name=&quot;std::make_shared&lt;line2Dup::ColorGradientPyramid,cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 Type=std::shared_ptr&lt;line2Dup::ColorGradientPyramid&gt; OverloadingParameters=[(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@23 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@23 Name=&lt;_Args_4&gt;)] @3)" />
+    <Alias n="25" Id="(Name=&quot;std::_Ref_count_obj2&lt;line2Dup::ColorGradientPyramid&gt;::_Ref_count_obj2&lt;line2Dup::ColorGradientPyramid&gt;&lt;cv::Mat const &amp;,cv::Mat const &amp;,float const &amp;,unsigned __int64 const &amp;,float const &amp;&gt;&quot; @1 @5 OverloadingParameters=[(@10 Name=&lt;_Args_0&gt;),(@10 Name=&lt;_Args_1&gt;),(@23 Name=&lt;_Args_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;_Args_3&gt;),(@23 Name=&lt;_Args_4&gt;)] @3)" />
+    <Alias n="26" Id="(Name=&quot;cv::makePtr&lt;line2Dup::ColorGradientPyramid,cv::Mat,cv::Mat,float,unsigned __int64,float&gt;&quot; @1 Type=cv::Ptr&lt;line2Dup::ColorGradientPyramid&gt; OverloadingParameters=[(@10 Name=&lt;a1_0&gt;),(@10 Name=&lt;a1_1&gt;),(@23 Name=&lt;a1_2&gt;),(Type=&quot;const unsigned __int64 &amp;&quot; Name=&lt;a1_3&gt;),(@23 Name=&lt;a1_4&gt;)] @3)" />
+    <Alias n="27" Id="(Name=line2Dup::similarity @1 @5 OverloadingParameters=[(Type=&quot;const std::vector&lt;cv::Mat,std::allocator&lt;cv::Mat&gt;&gt; &amp;&quot; Name=linear_memories),(Type=&quot;const line2Dup::Template &amp;&quot; Name=templ),(@14 Name=dst),(Type=cv::Size_&lt;int&gt; Name=size),@15] @3)" />
+    <Alias n="28" Id="(Name=line2Dup::quantizedOrientations @1 @5 OverloadingParameters=[(@10 Name=src),(@14 Name=magnitude),(@14 Name=angle),(@14 Name=angle_ori),@19] @3)" />
+    <Alias n="29" Id="Type=&quot;const int&quot;" />
+    <Alias n="30" Id="(Name=line2Dup::Detector::matchClass @1 @5 OverloadingParameters=[(Type=&quot;const std::vector&lt;std::vector&lt;std::vector&lt;cv::Mat,std::allocator&lt;cv::Mat&gt;&gt;,std::allocator&lt;std::vector&lt;cv::Mat,std::allocator&lt;cv::Mat&gt;&gt;&gt;&gt;,std::allocator&lt;std::vector&lt;std::vector&lt;cv::Mat,std::allocator&lt;cv::Mat&gt;&gt;,std::allocator&lt;std::vector&lt;cv::Mat,std::allocator&lt;cv::Mat&gt;&gt;&gt;&gt;&gt;&gt; &amp;&quot; Name=lm_pyramid),(Type=&quot;const std::vector&lt;cv::Size_&lt;int&gt;,std::allocator&lt;cv::Size_&lt;int&gt;&gt;&gt; &amp;&quot; Name=sizes),@19,(Type=&quot;std::vector&lt;line2Dup::Match,std::allocator&lt;line2Dup::Match&gt;&gt; &amp;&quot; Name=matches),(Type=&quot;const std::string &amp;&quot; Name=class_id),(Type=&quot;const std::vector&lt;std::vector&lt;line2Dup::Template,std::allocator&lt;line2Dup::Template&gt;&gt;,std::allocator&lt;std::vector&lt;line2Dup::Template,std::allocator&lt;line2Dup::Template&gt;&gt;&gt;&gt; &amp;&quot; Name=template_pyramids)] @3)" />
   </IdentifierAliases>
   <Styles>
     <Style TargetType="Link" GroupLabel="Current Call Stack Link" ValueLabel="True" Visibility="Hidden">
