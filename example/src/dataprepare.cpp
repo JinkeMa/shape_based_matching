@@ -11,6 +11,10 @@
 
 #include<json.hpp>
 
+//win32内存映射
+#include <Windows.h>
+#include<tchar.h>
+
 using namespace std;
 using namespace cv;
 namespace fs = std::experimental::filesystem;
@@ -29,51 +33,6 @@ void ListFilesInDirectory(const fs::path& directory_path) {
         std::cerr << "The provided path does not exist or is not a directory." << std::endl;
     }
 }
-/*
-{
-    {
-        "version": "5.0.2",
-            "flags" : {},
-            "shapes" : [
-        {
-            "label": "a",
-                "points" : [
-                    [
-                        1354.4354838709678,
-                        660.0806451612904
-                    ],
-                        [
-                            1360.8870967741937,
-                            669.3548387096774
-                        ],
-                        [
-                            1360.483870967742,
-                            675.8064516129032
-                        ],
-                        [
-                            1352.016129032258,
-                            670.5645161290323
-                        ],
-                        [
-                            1344.758064516129,
-                            667.741935483871
-                        ],
-                        [
-                            1345.5645161290322,
-                            662.9032258064516
-                        ],
-                        [
-                            1350.0,
-                            660.8870967741935
-                        ]
-                ],
-                "group_id": null,
-                    "shape_type" : "polygon",
-                    "flags" : {}
-        },
-}
-*/
-
 
 typedef struct jdata
 {
@@ -133,67 +92,276 @@ void json2jdata(json& json_, jdata& jdata_)
 
 
 //内存映射存储图像
-bool save_image_mmap()
+bool mmap_example()
 {
-#include <Windows.h>
 
-    // 图像文件路径
-    std::string imagePath = "path_to_your_image.jpg";
-    // 映射文件名
-    std::string mapFilePath = "mapped_image.dat";
+    /*
+   This program demonstrates file mapping, especially how to align a
+   view with the system file allocation granularity.
+*/
 
-    // 加载图像到 cv::Mat 对象
-    cv::Mat image = cv::imread(imagePath);
-    if (image.empty()) {
-        std::cerr << "Error: Image cannot be loaded." << std::endl;
-        return -1;
+#define BUFFSIZE 1024 // size of the memory to examine at any one time
+
+#define FILE_MAP_START 138240 // starting point within the file of
+// the data to examine (135K)
+
+/* The test file. The code below creates the file and populates it,
+   so there is no need to supply it in advance. */
+
+    TCHAR* lpcTheFile = TEXT("fmtest.txt"); // the file to be manipulated
+
+        HANDLE hMapFile;      // handle for the file's memory-mapped region
+        HANDLE hFile;         // the file handle
+        BOOL bFlag;           // a result holder
+        DWORD dBytesWritten;  // number of bytes written
+        DWORD dwFileSize;     // temporary storage for file sizes
+        DWORD dwFileMapSize;  // size of the file mapping
+        DWORD dwMapViewSize;  // the size of the view
+        DWORD dwFileMapStart; // where to start the file map view
+        DWORD dwSysGran;      // system allocation granularity
+        SYSTEM_INFO SysInfo;  // system information; used to get granularity
+        LPVOID lpMapAddress;  // pointer to the base address of the
+                              // memory-mapped region
+        char* pData;         // pointer to the data
+        int i;                // loop counter
+        int iData;            // on success contains the first int of data
+        int iViewDelta;       // the offset into the view where the data
+                              //shows up
+
+        // Create the test file. Open it "Create Always" to overwrite any
+        // existing file. The data is re-created below
+        hFile = CreateFile(lpcTheFile,
+            GENERIC_READ | GENERIC_WRITE,
+            0,
+            NULL,
+            CREATE_ALWAYS,
+            FILE_ATTRIBUTE_NORMAL,
+            NULL);
+
+        if (hFile == INVALID_HANDLE_VALUE)
+        {
+            return 4;
+        }
+
+        // Get the system allocation granularity.
+        GetSystemInfo(&SysInfo);
+        dwSysGran = SysInfo.dwAllocationGranularity;
+
+        // Now calculate a few variables. Calculate the file offsets as
+        // 64-bit values, and then get the low-order 32 bits for the
+        // function calls.
+
+        // To calculate where to start the file mapping, round down the
+        // offset of the data into the file to the nearest multiple of the
+        // system allocation granularity.
+        dwFileMapStart = (FILE_MAP_START / dwSysGran) * dwSysGran;
+
+        // Calculate the size of the file mapping view.
+        dwMapViewSize = (FILE_MAP_START % dwSysGran) + BUFFSIZE;
+
+        // How large will the file mapping object be?
+        dwFileMapSize = FILE_MAP_START + BUFFSIZE;
+
+        // The data of interest isn't at the beginning of the
+        // view, so determine how far into the view to set the pointer.
+        iViewDelta = FILE_MAP_START - dwFileMapStart;
+
+        // Now write a file with data suitable for experimentation. This
+        // provides unique int (4-byte) offsets in the file for easy visual
+        // inspection. Note that this code does not check for storage
+        // medium overflow or other errors, which production code should
+        // do. Because an int is 4 bytes, the value at the pointer to the
+        // data should be one quarter of the desired offset into the file
+
+        for (i = 0; i < (int)dwSysGran; i++)
+        {
+            WriteFile(hFile, &i, sizeof(i), &dBytesWritten, NULL);
+        }
+
+        // Verify that the correct file size was written.
+        dwFileSize = GetFileSize(hFile, NULL);
+
+        // Create a file mapping object for the file
+        // Note that it is a good idea to ensure the file size is not zero
+        hMapFile = CreateFileMapping(hFile,          // current file handle
+            NULL,           // default security
+            PAGE_READWRITE, // read/write permission
+            0,              // size of mapping object, high
+            dwFileMapSize,  // size of mapping object, low
+            NULL);          // name of mapping object
+
+        if (hMapFile == NULL)
+        {
+            return (2);
+        }
+
+        // Map the view and test the results.
+
+        lpMapAddress = MapViewOfFile(hMapFile,            // handle to
+                                                          // mapping object
+            FILE_MAP_ALL_ACCESS, // read/write
+            0,                   // high-order 32
+                                 // bits of file
+                                 // offset
+            dwFileMapStart,      // low-order 32
+                                 // bits of file
+                                 // offset
+            dwMapViewSize);      // number of bytes
+                                 // to map
+        if (lpMapAddress == NULL)
+        {
+            return 3;
+        }
+
+        // Calculate the pointer to the data.
+        pData = (char*)lpMapAddress + iViewDelta;
+
+        // Extract the data, an int. Cast the pointer pData from a "pointer
+        // to char" to a "pointer to int" to get the whole thing
+        iData = *(int*)pData;
+
+
+        // Close the file mapping object and the open file
+
+        bFlag = UnmapViewOfFile(lpMapAddress);
+        bFlag = CloseHandle(hMapFile); // close the file mapping object
+
+        if (!bFlag)
+        {
+        }
+
+        bFlag = CloseHandle(hFile);   // close the file itself
+
+        if (!bFlag)
+        {
+        }
+
+        return 0;
+}
+
+//内存映射存数据
+bool save_mmap(cv::Mat& src, string path)
+{
+    //变量命名 winAPI
+    HANDLE hFile;
+    HANDLE hMapFile;
+    TCHAR* lpcfilename = const_cast<char*>(path.c_str());
+    LPVOID lpMapAddress;
+
+    DWORD dBytesWritten;  // number of bytes written
+    DWORD dwFileSize;     // temporary storage for file sizes
+    DWORD dwFileMapSize;  // size of the file mapping
+    DWORD dwMapViewSize;  // the size of the view
+    DWORD dwFileMapStart; // where to start the file map view
+
+    //变量命名 cpp
+    char* pData;
+    int i;
+    int iData;
+    int iViewDelta;
+
+    //计算数据量与各种offset
+
+    //创建filehandle
+    hFile = CreateFile(
+        lpcfilename,
+        GENERIC_READ | GENERIC_WRITE,
+        0,//不允许共享对象
+        NULL,
+        CREATE_ALWAYS,
+        FILE_ATTRIBUTE_NORMAL,
+        NULL
+    );
+    if (hFile == INVALID_HANDLE_VALUE)
+    {
+        return false;
     }
 
-    // 获取图像数据的指针
-    const unsigned char* imageData = image.data;
-    // 计算图像数据的大小
-    size_t imageSize = image.total() * image.elemSize();
+    //计算映射字节数
+    DWORD depth;
+    if (src.depth() == CV_8U || src.depth() == CV_8S)
+    {
+        depth = 1;
+    }
+    else if (src.depth() == CV_16U || src.depth() == CV_16S || src.depth() == CV_16F)
+    {
+        depth = 2;
+    }
+    else if (src.depth() == CV_32S || src.depth() == CV_32F)
+    {
+        depth = 4;
+    }
+    else if (src.depth() == CV_64F)
+    {
+        depth = 8;
+    }
+    dwMapViewSize = depth * src.rows * src.cols;
 
-    // 打开文件进行内存映射
-    std::ofstream file(mapFilePath, std::ios::binary | std::ios::inout | std::ios::trunc);
-    if (!file.is_open()) {
-        std::cerr << "Error: Unable to open file for memory mapping." << std::endl;
-        return -1;
+    //
+    hMapFile = CreateFileMapping(
+        hFile,
+        NULL,
+        PAGE_READWRITE,
+        0,
+        dwMapViewSize,
+        NULL);
+    if (hMapFile == NULL)
+    {
+        return false;
     }
 
-    // 设置文件大小为图像数据的大小
-    file.seekp(0, std::ios::end);
-    file.write(reinterpret_cast<char*>(&imageSize), sizeof(imageSize));
-    file.seekp(0, std::ios::beg);
-
-    // 创建内存映射
-    HANDLE fileHandle = (HANDLE)_get_osfhandle(_fileno(file.fileno()));
-    HANDLE mappingHandle = CreateFileMapping(fileHandle, nullptr, PAGE_READWRITE, 0, static_cast<DWORD>(imageSize), nullptr);
-    if (mappingHandle == nullptr) {
-        std::cerr << "Error: Unable to create memory mapping." << std::endl;
-        return -1;
+    lpMapAddress = MapViewOfFile(
+        hMapFile,            // handle to
+                             // mapping object
+        FILE_MAP_ALL_ACCESS, // read/write
+        0,                   // high-order 32
+                             // bits of file
+                             // offset
+        0,                   // low-order 32
+                             // bits of file
+                             // offset
+        dwMapViewSize        // number of bytes to map
+        );
+    if (lpMapAddress == NULL)
+    {
+        return false;
     }
 
-    // 将图像数据映射到内存
-    LPBYTE mappingAddress = reinterpret_cast<LPBYTE>(MapViewOfFile(mappingHandle, FILE_MAP_WRITE, 0, 0, 0));
-    if (mappingAddress == nullptr) {
-        std::cerr << "Error: Unable to map view of file." << std::endl;
-        CloseHandle(mappingHandle);
-        return -1;
+    //待完善，需要加上png数据头，否则格式不正确
+    auto re = memcpy(lpMapAddress, src.ptr(), dwMapViewSize);
+    
+    bool bFlag = UnmapViewOfFile(lpMapAddress);
+    bFlag = CloseHandle(hMapFile); // close the file mapping object
+
+    if (!bFlag)
+    {
+
     }
 
-    // 将图像数据复制到映射的内存
-    memcpy(mappingAddress, imageData, static_cast<size_t>(imageSize));
+    bFlag = CloseHandle(hFile);   // close the file itself
 
-    // 取消映射内存
-    UnmapViewOfFile(mappingAddress);
-    // 关闭内存映射
-    CloseHandle(mappingHandle);
-    // 关闭文件
-    file.close();
+    if (!bFlag)
+    {
+        
+    }
 
-    std::cout << "Image data has been stored in memory-mapped file." << std::endl;
+    return true;
+}
 
+//存储图像
+bool save_image(cv::Mat& src, string filename, int stype)
+{
+    switch (stype)
+    {
+        //
+    case -1:
+        cv::imwrite(filename, src);
+        break;
+    case 1:
+        save_mmap(src, filename);
+        break;
+    }
+    return true;
 }
 
 int main()
@@ -253,13 +421,19 @@ int main()
         {
             for (auto pt : shape.points)
             {
-                drawMarker(mask, cv::Point(pt), cv::Scalar{ 255 },0,5);
+                drawMarker(mask, cv::Point(pt), cv::Scalar{ 255 }, 0, 5);
             }
             contours.emplace_back(shape.points);
         }
         //drawContours只接受整型cv::Point
-        drawContours(mask, contours, -1, cv::Scalar{ 255 },-1);
+        drawContours(mask, contours, -1, cv::Scalar{ 255 }, -1);
+
+        string str_ = item.first;
+        int len = size(".jpg") - 1;
+        string&& name = string(str_.begin(), str_.end() - len) + ".png";
+        save_image(mask, name, -1);
     }
+
 
 #pragma endregion
 }
